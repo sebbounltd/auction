@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <div class="row">
+            <div class="col-xs-2">
+                <a href="/"><img id="logo" src="../public/images/Pr0gramm_Logo.svg.png"></a>
+            </div>
+            <div class="col-xs-8">
+                <div class="input-group" id="suchleiste">
+                    <div class="input-group-btn search-panel">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            <span id="search_concept">Kategorie</span> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Sport Utilities</a></li>
+                            <li><a href="#">Minivans</a></li>
+                            <li><a href="#">Trucks</a></li>
+                            <li><a href="#">Passenger Cars</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Anything</a></li>
+                        </ul>
+                    </div>
+                    <input type="hidden" name="search_param" value="all" id="search_param">
+                    <input type="text" class="form-control" name="x" placeholder="Suche...">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav ">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/Impressum">Impressum</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li class="active"><a href="/Registrieren">Registrieren</a></li>
+                    <li><a href="#">Verkaufen</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><form class="form-inline login">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword3">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign in</button>
+                    </form></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+    <!-- Main -->
+    <div class="register">
+        <form class="form-horizontal" id="Registrieren-form" method="post" action="/Registrieren">
+
+            <div class="form-group" id="Benutzerdiv">
+                <div class="col-sm-3">
+                    <input name="username" type="text" maxlength="20" class="form-control" id="username" placeholder="Benutzername*" autofocus required/>
+                </div>
+            </div>
+
+            <div class="form-group" id="pass1div">
+                <div class="col-sm-3">
+                    <input name="password" type="password" maxlength="30" class="form-control" id="password" placeholder="Passwort*" required/>
+                </div>
+            </div>
+
+            <div class="form-group" id="pass2div">
+                <div class="col-sm-3">
+                    <input name="password2" type="password" maxlength="30" class="form-control" id="password2" placeholder="Passwort Wiederholen*" required/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-5">
+                    <input name="email" type="email" maxlength="50" class="form-control" id="Email" placeholder="E-mail*" required/>
+                </div>
+            </div>
+
+            <div class="radio">
+                <label class="col-sm-1">
+                    <input type="radio" name="gender" id="female" value="female">
+                    Frau
+                </label>
+                <label class="col-sm-1">
+                    <input type="radio" name="gender" id="male"  value="male" required>
+                    Mann
+                </label>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <div class="col-sm-3">
+                    <input name="name1" type="text" maxlength="50" class="form-control" id="name" placeholder="Vorname*" required/>
+                </div>
+
+                <div class="col-sm-3">
+                    <input name="lastname" type="text" maxlength="50" class="form-control" id="lastname" placeholder="Nachname*" required/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-3">
+                    <input name="bday" type="text" maxlength="30" class="form-control"  placeholder="Gburtsdatum* TT/MM/JJJJ*" required/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-3">
+                    <input name="street" maxlength="70" type="text" class="form-control" id="street" placeholder="Strasse*" required/>
+                </div>
+                <div class="col-sm-2">
+                    <input name="housenumber" type="text" maxlength="3" class="form-control"  id="houseNumber" placeholder="Nr.*" required/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-3">
+                    <input name="place" type="text" maxlength="30" class="form-control" id="place" placeholder="Ort*" required/>
+                </div>
+                <div class="col-sm-2">
+                    <input name="zip" type="text" maxlength="6" class="form-control" id="zip" placeholder="PLZ*" required/>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-3">
+                    <input name="phonenumber" type="text" maxlength="30" class="form-control" id="phonenumber" placeholder="Telefonnummer"/>
+                </div>
+            </div>
+
+            <div class="checkbox">
+                <label>
+                    <input name="agb" type="checkbox" id="agb" value="option1" aria-label="..." required/>
+                    <label>Mit meiner Anmeldung akzeptiere ich die Allgemeinen Geschäftsbedingungen</label>
+                </label>
+            </div>
+
+            <br>
+
+            <button type="submit" id="submit-btn" class="btn btn-primary">Abschicken</button>
+
+
+        </form>
+    </div>
+
+    <footer>
+
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="register.js"></script>
+</body>
+</html>

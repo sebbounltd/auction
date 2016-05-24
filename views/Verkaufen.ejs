@@ -1,0 +1,135 @@
+<%- include standart.ejs %>
+
+                                <!-- Main -->
+                                                <div id="container-sample">
+                                                    <h1>Verkaufen</h1>
+                                                    <hr>
+                                                        <form class="form-horizontal" id="Verkaufen-form" method="post" action="/Verkaufen">
+
+                                                            <div class="form-group">
+                                                                <label for="eingabeTitel" class="col-sm-2 control-label">Titel:</label>
+                                                                <div class="col-sm-6 feedback">
+                                                                    <input name="titel" id="eingabeTitel" type="text" maxlength="60" class="form-control" placeholder="Titel" autofocus required/>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="eingabeKategorie" class="col-sm-2 control-label">Katgorie:</label>
+                                                                <div class="col-sm-3">
+                                                                    <select name="kategorie" id="eingabeKategorie" class="form-control">
+                                                                        <option value="Kategorie 1" >Kategorie 1</option>
+                                                                        <option value="Kategorie 2" >Kategorie 2</option>
+                                                                        <option value="Kategorie 3" >Kategorie 3</option>
+                                                                        <option value="Kategorie 4" >Kategorie 4</option>
+                                                                        <option value="Kategorie 5" >Kategorie 5</option>
+                                                                        <option value="Kategorie 6" >Kategorie 6</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="eingabeText" class="col-sm-2 control-label">Beschreibung: </label>
+                                                                <div class="col-sm-6 feedback">
+                                                                    <textarea  name="text" maxlength="2000" id="eingabeText" class="form-control" rows="7" required>...</textarea>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="beispielFeldDatei" class="col-sm-2 control-label">Bild1:</label>
+                                                                <div class="col-sm-6">
+                                                                    <input type="file" id="beispielFeldDatei">
+                                                                    </div>
+                                                                </div>
+                                                                <hr>
+
+                                                            <div class="form-group">
+                                                                <label class="col-sm-2 control-label">Gebots-Art: </label>
+                                                                    <div class="radio feedback">
+                                                                        <label class="col-sm-2">
+                                                                            <input type="radio" name="radioprice" id="optionsfeldRadio1" value="option1">
+                                                                                Nur Gebots Auktion
+                                                                            </label>
+                                                                            <label class="col-sm-2">
+                                                                                <input type="radio" name="radioprice" id="optionsfeldRadio2" value="option2">
+                                                                                    Gebots Auktion und Sofort Kaufen
+                                                                                </label>
+                                                                                <label class="col-sm-2">
+                                                                                    <input type="radio" name="radioprice" id="optionsfeldRadio3" value="option3">
+                                                                                        Nur Sofort Kaufen
+                                                                                    </label>
+                                                                            </div>
+                                                                                </div>
+
+                                                                    <div class="form-group">
+                                                                        <label for="eingabePreis" class="col-sm-2 control-label">Startpreis:</label>
+                                                                        <div class="startpreisdiv col-sm-2 feedback">
+                                                                            <input name="price" id="eingabePreis" type="text" maxlength="4" class="form-control" disabled/>
+                                                                            </div>
+                                                                        <label class="startpreislabel col-sm-2">,00 EUR</label>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label for="eingabePreissofort" class="col-sm-2 control-label">Sofort Kaufen Preis:</label>
+                                                                            <div class="col-sm-2 feedback startpreisdiv">
+                                                                                <input name="pricenow" id="eingabePreissofort" type="text" maxlength="4" class="form-control" disabled/>
+                                                                                    </div>
+                                                                            <label class="startpreislabel cool-sm-2">,00 EUR</label>
+                                                                                </div>
+
+                                                                                <div class="form-group">
+                                                                                    <label for="eingabeDauer" class="col-sm-2 control-label">Auktionsdauer:</label>
+                                                                                    <div class="col-sm-1">
+                                                                                        <select name="dauer" id="eingabeDauer" class="form-control">
+                                                                                            <option value="28" >28</option>
+                                                                                            <option value="21" >21</option>
+                                                                                            <option value="14" >14</option>
+                                                                                            <option value="10" >10</option>
+                                                                                            <option value="7" >7</option>
+                                                                                            <option value="5" >5</option>
+                                                                                            <option value="3" >3</option>
+                                                                                            <option value="2" >2</option>
+                                                                                            <option value="1" >1</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="form-group">
+                                                                                    <label for="eingabePLZ" class="col-sm-2 control-label">Postleitzahl:</label>
+                                                                                    <div class="col-sm-2 feedback">
+                                                                                        <input name="plz" id="eingabePLZ" type="text" maxlength="5" class="form-control" required/>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="form-group">
+                                                                                    <label for="eingabeOrt" class="col-sm-2 control-label">Ort:</label>
+                                                                                    <div class="col-sm-2 feedback">
+                                                                                        <input name="ort" id="eingabeOrt" type="text" maxlength="30" class="form-control" required/>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <br>
+                                                                                    <br>
+
+                                                                                        <div class="form-group">
+                                                                                            <label class="col-sm-2 control-label"></label>
+                                                                                            <div class="col-sm-2">
+                                                                                                <button type="submit" class="btn btn-primary">Abschicken</button>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                    </form>
+                                                                                </div>
+
+                                                                                <footer>
+
+                                                                                </footer>
+                                                                            </div>
+
+
+                                                                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+                                                                            <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.js"></script>
+                                                                            <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.js"></script>
+                                                                            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+                                                                            <script src="javascripts/verkaufen.js"></script>
+                                                                        </body>
+                                                                    </html>

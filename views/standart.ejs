@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <title>test</title>
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+                        <link rel="stylesheet" href="../stylesheets/style.css">
+                        </head>
+                        <body>
+                        <div class="container">
+                        <!-- Header -->
+                            <div class="header">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <a href="/"><img id="logo" src="/images/Pr0gramm_Logo.svg.png"></a>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="input-group" id="suchleiste">
+                                                <div class="input-group-btn search-panel">
+                                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                                        <span id="search_concept">Kategorie</span> <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#">Sport Utilities</a></li>
+                                                        <li><a href="#">Minivans</a></li>
+                                                        <li><a href="#">Trucks</a></li>
+                                                        <li><a href="#">Passenger Cars</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Anything</a></li>
+                                                    </ul>
+                                                </div>
+                                                <input type="hidden" name="search_param" value="all" id="search_param">
+                                                    <input type="text" class="form-control" name="x" placeholder="Suche...">
+                                                    <span class="input-group-btn">
+                                                    <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                <!-- Static navbar -->
+                                <nav class="navbar navbar-default">
+                                    <div class="container-fluid">
+                                        <div id="navbar" class="navbar-collapse collapse">
+                                            <ul class="nav navbar-nav ">
+                                                <li><a href="/">Home</a></li>
+                                                <li><a href="/Impressum">Impressum + Info</a></li>
+                                                <li><a href="/Verkaufen">Verkaufen</a></li>
+                                            </ul>
+                                            <ul class="nav navbar-nav navbar-right">
+
+                                             <% if(!user) { %>
+                                           <li><a href="/Registrieren" id="login-nav"><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-user"></span>  Registrieren</button></a></li>
+                                           <li><a href="/login" id="login-nav"><button type="button" class="btn btn-success"><span class="glyphicon glyphicon-log-in"></span>  Login</button></a></li>
+                                             <% } else { %>
+
+                                               <div class="dropdown" id="login-nav">
+                                                <li><button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                <span class="glyphicon glyphicon-user"></span> <%= user.username %>
+                                                 <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+                                                <li><a href="/profil/<%= user.id %>">Profil</a></li>
+                                                <li><a href="#">Aktion</a></li>
+                                                <li><a href="#">anderes</a></li>
+                                                 <li role="separator" class="divider"></li>
+                                                <li><a href="/logout">Logout</a></li>
+
+                                                </ul>
+                                                </div></li>
+                                                <% } %>
+
+                                                </ul>
+                                                </div><!--/.nav-collapse -->
+                                            </div><!--/.container-fluid -->
+                                        </nav>

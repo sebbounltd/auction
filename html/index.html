@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <div class="row">
+            <div class="col-xs-2">
+                <a href="/"><img id="logo" src="../public/images/Pr0gramm_Logo.svg.png"></a>
+            </div>
+            <div class="col-xs-8">
+                <div class="input-group" id="suchleiste">
+                    <div class="input-group-btn search-panel">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            <span id="search_concept">Kategorie</span> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Sport Utilities</a></li>
+                            <li><a href="#">Minivans</a></li>
+                            <li><a href="#">Trucks</a></li>
+                            <li><a href="#">Passenger Cars</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Anything</a></li>
+                        </ul>
+                    </div>
+                    <input type="hidden" name="search_param" value="all" id="search_param">
+                    <input type="text" class="form-control" name="x" placeholder="Suche...">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav ">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="/Impressum">Impressum</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="/Registrieren">Registrieren</a></li>
+                    <li><a href="#">Verkaufen</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><form class="form-inline login" method="post" action="/">
+                        <div class="form-group">
+                            <input name="newemail" type="email" class="form-control" id="exampleInputEmail3" placeholder="Email" required>
+                            <input name="newpassword" type="password" class="form-control" id="exampleInputPassword3" placeholder="Password" rquired>
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign in</button>
+                    </form></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+    <!-- Kategorien -->
+    <div class="row">
+        <div class="col-md-2 feld">
+            <table class="table">
+                <tr><th>Kategorien</th></tr>
+                <tr class="danger"><td>Kategorie1</td></tr>
+                <tr><td>Kategorie1</td></tr>
+                <tr><td>Kategorie1</td></tr>
+                <tr><td>Kategorie1</td></tr>
+                <tr class="danger"><td>Kategorie1</td></tr>
+                <tr class="danger"><td>Kategorie1</td></tr>
+                <tr><td>Kategorie1</td></tr>
+                <tr><td>Kategorie1</td></tr>
+                <tr><td>Kategorie1</td></tr>
+                <tr><td>Kategorie1</td></tr>
+                <tr><td>Kategorie1</td></tr>
+                <tr><td>Kategorie1</td></tr>
+                <tr><td>Kategorie1</td></tr>
+                <tr><td>Kategorie1</td></tr>
+                <tr class="danger"><td>Kategorie1</td></tr>
+                <tr><td>Kategorie1</td></tr>
+                <tr><td>Kategorie1</td></tr>
+                <tr><td>Kategorie1</td></tr>
+            </table>
+        </div>
+
+        <!-- Main-Content -->
+        <div class="col-md-9 tables">
+
+            <!-- Top- Anzeigen -->
+            <div class="top-display feld">
+                <table class="table  table-striped">
+                    <tr class="success">
+                        <td><img src="..." alt="..." class="img-circle"> </td>
+                        <td>Titel............. </td>
+                        <td>Ort............... </td>
+                        <td>Preis............. </td>
+                    </tr>
+                    <tr>
+                        <td><img src="..." alt="..." class="img-circle"> </td>
+                        <td>Titel............. </td>
+                        <td>Ort............... </td>
+                        <td>Preis............. </td>
+                    </tr>
+                    <tr>
+                        <td><img src="..." alt="..." class="img-circle"> </td>
+                        <td>Titel............. </td>
+                        <td>Ort............... </td>
+                        <td>Preis............. </td>
+                    </tr>
+                    <tr>
+                        <td><img src="..." alt="..." class="img-circle"> </td>
+                        <td>Titel............. </td>
+                        <td>Ort............... </td>
+                        <td>Preis............. </td>
+                    </tr>
+                    <tr>
+                        <td><img src="..." alt="..." class="img-circle"> </td>
+                        <td>Titel............. </td>
+                        <td>Ort............... </td>
+                        <td>Preis............. </td>
+                    </tr>
+                    <tr>
+                        <td><img src="..." alt="..." class="img-circle"> </td>
+                        <td>Titel............. </td>
+                        <td>Ort............... </td>
+                        <td>Preis............. </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <!-- last-Minute -->
+            <div class="last-minute feld">
+                <table class="table  table-striped">
+                    <tr>
+                        <td><img src="..." alt="..." class="img-circle"> </td>
+                        <td>Titel............. </td>
+                        <td>Ort............... </td>
+                        <td>Preis............. </td>
+                        <td>Zeit.............. </td>
+                    </tr>
+                    <tr>
+                        <td><img src="..." alt="..." class="img-circle"> </td>
+                        <td>Titel............. </td>
+                        <td>Ort............... </td>
+                        <td>Preis............. </td>
+                        <td>Zeit.............. </td>
+                    </tr>
+                    <tr>
+                        <td><img src="..." alt="..." class="img-circle"> </td>
+                        <td>Titel............. </td>
+                        <td>Ort............... </td>
+                        <td>Preis............. </td>
+                        <td>Zeit.............. </td>
+                    </tr>
+                    <tr>
+                        <td><img src="..." alt="..." class="img-circle"> </td>
+                        <td>Titel............. </td>
+                        <td>Ort............... </td>
+                        <td>Preis............. </td>
+                        <td>Zeit.............. </td>
+                    </tr>
+                    <tr>
+                        <td><img src="..." alt="..." class="img-circle"> </td>
+                        <td>Titel............. </td>
+                        <td>Ort............... </td>
+                        <td>Preis............. </td>
+                        <td>Zeit.............. </td>
+                    </tr>
+                    <tr>
+                        <td><img src="..." alt="..." class="img-circle"> </td>
+                        <td>Titel............. </td>
+                        <td>Ort............... </td>
+                        <td>Preis............. </td>
+                        <td>Zeit.............. </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+
+    </footer>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="controller.js"></script>
+</body>
+</html>

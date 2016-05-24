@@ -1,0 +1,59 @@
+<%- include standart.ejs %>
+                                                <div id="container-sample">
+                                                    <% if(userfind !== 5){ %>
+                                                    <h1><%= userfind.username %></h1>
+                                                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                                    <span>100%</span>
+                                                    <hr>
+                                                        <button type="button" class="btn btn-primary">Nachricht schreiben</button><br><br>
+                                                        <label>Registriert seit: </label><span>  </span><br>
+                                                        <label>Alter: </label><span> 20</span><br>
+                                                        <label> </label><span> </span><br>
+                                                        <label> </label><span> </span><br>
+                                                        <label> </label><span> </span><br>
+                                                        <label></label><span> </span><br>
+
+                                                      <% }else{ %>
+
+                                                      <h2><%= user.username %></h2>
+                                                      <hr>
+                                                      <div class="alert alert-warning alert-dismissible">
+                                                      <h3>Nicht oefentliche Daten:</h3>
+                                                      <strong>E-mail Adresse: </strong> <span><%= user.email %></span><br>
+                                                      <strong>Geschlecht: </strong> <span><%= user.geschlecht %></span><br>
+                                                      <strong>Geburtsdatum: </strong> <span><%= user.geburtsdatum %></span><br>
+                                                      <strong>Vorname: </strong> <span><%= user.vorname %></span><br>
+                                                      <strong>Nachname: </strong> <span><%= user.nachname %></span><br>
+                                                      <strong>Strasse: </strong> <span><%= user.strasse %></span><br>
+                                                      <strong>Hausnummer: </strong> <span><%= user.hausnummer %></span><br>
+                                                      <strong>Ort: </strong> <span><%= user.ort %></span><br>
+                                                      <strong>Plz: </strong> <span><%= user.plz %></span><br>
+                                                      <strong>Telefonnummer: </strong> <span><%= user.telefonnummer %></span>
+                                                      </div>
+
+                                                      <div class="alert alert-success" role="alert">
+                                                      <h4>Oeffentliche Daten:</h4>
+                                                      <form class="form-horizontal" id="profil-form" method="post" action="/Verkaufen">
+
+                                                        <div class="form-group">
+                                                        <label class="col-sm-1" for="beispielFeldEmail1">Alter:</label>
+                                                        <div class="col-sm-4">
+                                                            <input type="text" class="form-control" id="beispielFeldEmail1" placeholder="21">
+                                                            </div
+                                                        </div>
+                                                        </form>
+                                                      </div>
+                                                        <% } %>
+
+
+                                                    </div>
+                                                    </div>
+                                                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+                                                        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+                                                        <script src="../javascripts/controller.js"></script>
+                                                    </body>
+                                                    </html>

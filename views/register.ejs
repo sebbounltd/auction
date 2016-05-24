@@ -1,0 +1,114 @@
+<%- include standart.ejs %>
+
+                                <!-- Main -->
+                                                    <% if(Rmessage.length > 0) { %>
+                                                        <div class="alert alert-warning" role="alert"><%= Rmessage %></div>
+                                                        <% } %>
+
+                                                <div class="register">
+                                                    <form class="form-horizontal" id="Registrieren-form" method="post" action="/Registrieren">
+
+                                                        <div class="form-group" id="Benutzerdiv">
+                                                            <div class="col-sm-3">
+                                                                <input name="username" type="text" maxlength="20" class="form-control" id="username" placeholder="Benutzername*" autofocus required/>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group" id="pass1div">
+                                                            <div class="col-sm-3">
+                                                                <input name="password" type="password" maxlength="30" class="form-control" id="password" placeholder="Passwort*" required/>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group" id="pass2div">
+                                                            <div class="col-sm-3">
+                                                                <input name="password2" type="password" maxlength="30" class="form-control" id="password2" placeholder="Passwort Wiederholen*" required/>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <div class="col-sm-5">
+                                                                <input name="email" type="email" maxlength="50" class="form-control" id="Email" placeholder="E-mail*" required/>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                            <label class="col-sm-1">
+                                                                <input type="radio" name="gender" id="female" value="female">
+                                                                    Frau
+                                                                </label>
+                                                                <label class="col-sm-1">
+                                                                    <input type="radio" name="gender" id="male"  value="male" required>
+                                                                        Mann
+                                                                    </label>
+                                                                </div>
+
+                                                                <br>
+
+                                                                    <div class="form-group">
+                                                                        <div class="col-sm-3">
+                                                                            <input name="name1" type="text" maxlength="50" class="form-control" id="name" placeholder="Vorname*" required/>
+                                                                        </div>
+
+                                                                        <div class="col-sm-3">
+                                                                            <input name="lastname" type="text" maxlength="50" class="form-control" id="lastname" placeholder="Nachname*" required/>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <div class="col-sm-3">
+                                                                            <input name="bday" type="text" maxlength="30" class="form-control"  placeholder="Gburtsdatum* TT/MM/JJJJ*" required/>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <div class="col-sm-3">
+                                                                            <input name="street" maxlength="70" type="text" class="form-control" id="street" placeholder="Strasse*" required/>
+                                                                        </div>
+                                                                        <div class="col-sm-2">
+                                                                            <input name="housenumber" type="text" maxlength="3" class="form-control"  id="houseNumber" placeholder="Nr.*" required/>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <div class="col-sm-3">
+                                                                            <input name="place" type="text" maxlength="30" class="form-control" id="place" placeholder="Ort*" required/>
+                                                                        </div>
+                                                                        <div class="col-sm-2">
+                                                                            <input name="zip" type="text" maxlength="6" class="form-control" id="zip" placeholder="PLZ*" required/>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <div class="col-sm-3">
+                                                                            <input name="phonenumber" type="text" maxlength="30" class="form-control" id="phonenumber" placeholder="Telefonnummer"/>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="checkbox">
+                                                                        <label>
+                                                                            <input name="agb" type="checkbox" id="agb" value="option1" aria-label="..." required/>
+                                                                            <label>Mit meiner Anmeldung akzeptiere ich die Allgemeinen Geschäftsbedingungen</label>
+                                                                        </label>
+                                                                    </div>
+
+                                                                    <br>
+
+                                                                        <button type="submit" id="submit-btn" class="btn btn-primary">Abschicken</button>
+
+
+                                                                    </form>
+                                                                </div>
+
+                                                                <footer>
+
+                                                                </footer>
+                                                            </div>
+                                                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+                                                            <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.js"></script>
+                                                            <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.js"></script>
+                                                            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+                                                            <script src="javascripts/register.js"></script>
+                                                        </body>
+                                                    </html>

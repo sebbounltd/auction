@@ -1,0 +1,139 @@
+.header {
+    height: 100px;
+}
+#suchleiste{
+    margin-top: 30px;
+
+}
+#logo{
+    margin-top:10px;
+    margin-left: 30px;
+    width: 80px;
+    height: 80px;
+}
+.feld{
+    border: 1px solid #cbd0d3;
+    background-color: #fbfcfc;
+    margin-left: 15px;
+}
+.list-group{
+    list-style: none
+
+}
+.register{
+    margin-top: 20px;
+    padding-left: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #fbfcfc;
+    border: 1px solid #cbd0d3;
+}
+#login-nav{
+    padding-top: 8px;
+    padding-bottom: 7px;
+}
+footer{
+    margin-top:5vh;
+    border-top: 4px solid #cbd0d3;
+    border-left: 1px solid #cbd0d3;
+    border-right: 1px solid #cbd0d3;
+    background-color: #fbfcfc;
+    width: 100%;
+    height: 40vh;
+}
+.tables{
+    width: 81%;
+    padding-right: 0;
+    padding-left: 0;
+}
+#container-sample{
+    border: 1px solid #cbd0d3;
+    background-color: #fbfcfc;
+    width: 100%;
+    height: 1000px;
+    padding: 20px 20px 20px 20px;
+}
+#container-auktion{
+    border: 1px solid #cbd0d3;
+    background-color: #fbfcfc;
+    width: 100%;
+    height: 1000px;
+    padding: 20px 20px 20px 20px;
+}
+#container-auktion h1{
+    font-size: 2.5em;
+}
+.alert ul{
+    list-style: none;
+ }
+#container-agb{
+    border: 1px solid #cbd0d3;
+    background-color: #fbfcfc;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px 20px 20px;
+}
+#container-agb h1{
+    font-size: 3em;
+}
+#container-sample h1 {
+    font-size: 5em;
+}
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.form-signin .checkbox {
+    font-weight: normal;
+}
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.price-inline{
+    display: inline;
+}
+#eingabePreis{
+    width:60px;
+}
+#eingabePreissofort{
+    width: 60px;
+}
+.radio-margin{
+    margin-left: 20px;
+}
+
+#bildtestt{
+    margin-left:15px;
+    height: 300px;
+    border: 2px solid grey;
+    background-color: #d4d4d4;
+}
+.span-price{
+    font-size: 2em;
+    font-weight: Bold;
+
+}

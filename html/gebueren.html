@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- header -->
+    <div class="header">
+        <div class="row">
+            <div class="col-xs-2">
+                <a href="/"><img id="logo" src="/images/Pr0gramm_Logo.svg.png"></a>
+            </div>
+            <div class="col-xs-8">
+                <div class="input-group" id="suchleiste">
+                    <div class="input-group-btn search-panel">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            <span id="search_concept">Kategorie</span> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Sport Utilities</a></li>
+                            <li><a href="#">Minivans</a></li>
+                            <li><a href="#">Trucks</a></li>
+                            <li><a href="#">Passenger Cars</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Anything</a></li>
+                        </ul>
+                    </div>
+                    <input type="hidden" name="search_param" value="all" id="search_param">
+                    <input type="text" class="form-control" name="x" placeholder="Suche...">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav ">
+                    <li><a href="/">Home</a></li>
+                    <li  class="active"><a href="/Impressum">Impressum + Info</a></li>
+                    <li><a href="/Verkaufen">Verkaufen</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+
+
+
+
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+    <!-- main -->
+    <div class="row">
+
+        <div class="col-md-9">
+            <div class="main" id="container-sample">
+                <h1>Gebühren</h1>
+                        <div class="alert alert-success" role="alert">
+                            <ul>
+                                <li>+ Keine Einstellungsgebühren</li>
+                                <li>+ Lade bis zu 5 Bilder hoch</li>
+                                <li>+ Kinee Kosten für Fettschrift und Textmaker</li>
+                            </ul>
+                        </div>
+                    <p>Unsere Gebühren beschräanken sich auf folgendes:<br>
+                    15% Verkaufsprovision und 10,00- für ein Top-Angebot
+                    </p>
+
+                </div>
+            </div>
+
+
+        <div class="col-md-3">
+            <ul class="list-group">
+                <li><a class="list-group-item" href="/Impressum">Impressum</a></li>
+                <li><a class="list-group-item" href="/AGB">Allgemeine Geschäftsbedingungen (AGB)</a></li>
+                <li><a class="list-group-item active" href="/Gebuehren">Gebühren</a></li>
+                <li><a class="list-group-item" href="/Kontakt">Kundenservice</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

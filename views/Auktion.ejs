@@ -1,0 +1,36 @@
+<%- include standart.ejs %>
+
+
+<div id="container-auktion">
+
+                                                    <h1><%= Auktion.titel %></h1>
+                                                        <hr>
+                                                            <div class="row">
+
+                                                                <div class="col-sm-4" id="bildtestt" >bild..</div>
+
+                                                                <div class="col-sm-3"><span class="span-price">EUR <%= Auktion.startpreis %>,00</span>
+                                                                    <input type="text" class="form-control" id="3" placeholder="Ihr maximal Preis"><br>
+                                                                        <button type="button" class="btn btn-primary">Bieten</button><br><br>
+                                                                        <button type="button" class="btn btn-primary">Sofort Kaufen für <%= Auktion.sofortpreis %>,00 EUR</button>
+                                                                        <label>PLZ:</label> <span><%= Auktion.plz %></span><br>
+                                                                        <label>Noch:</label> <span><%= Auktion.dauer %> Tage</span><br>
+                                                                        <label>Verkaufer:</label><a href="/profil/<%= Auktion.verkaufer %>"><%= Auktion.username %></a><br>
+                                                                        <label>Zahlung:</label><span>Bar oder Paypal</span>
+                                                                            <%= Auktion.start %>
+                                                                    </div>
+
+                                                                        <div class="col-sm-10">
+                                                                            <h2>Beschreibung</h2>
+                                                                            <hr>
+                                                                                <p><%= Auktion.beschreibung %></p>
+                                                                            </div>
+
+
+
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+
+                                                                    </body>
+                                                                </html>
